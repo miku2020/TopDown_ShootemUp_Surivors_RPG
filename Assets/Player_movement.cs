@@ -99,7 +99,7 @@ public class Player_movement : MonoBehaviour
 
     void PlayerMove()
     {
-        rb.velocity = new Vector2(moveDirection.x * movespeed, moveDirection.y * movespeed);
+        rb.linearVelocity = new Vector2(moveDirection.x * movespeed, moveDirection.y * movespeed);
     }
 
     private void OnTriggerEnter2D(Collider2D lvltrigger)
